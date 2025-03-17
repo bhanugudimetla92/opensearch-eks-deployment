@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+metadata:
+  name: opensearch-data-opensearch-0
+  namespace: opensearch
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: gp2
